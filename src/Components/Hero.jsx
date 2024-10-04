@@ -4,7 +4,7 @@ import heroImage from "/hero.jpeg";
 
 const HeroSection = () => {
     return (
-        <div>
+        <div id="hero">
             {/* hero section */}
             <section
                 className="hero bg-white text-center w-full h-screen flex flex-col"

@@ -29,7 +29,7 @@ const otherNews = [
 
 function News() {
     return (
-        <section className="container mx-auto px-4 py-12 font-inter" id='news'>
+        <section className="w-full mx-auto px-4 py-12 font-inter" id='news'>
             <h2 className="text-3xl font-inter mb-8 text-white">Latest News</h2>
             <div className="flex flex-col lg:flex-row gap-6">
                 <div className="lg:w-4/5 relative overflow-hidden rounded-lg shadow-lg">
