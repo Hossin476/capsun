@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import heroImage from "/hero.jpeg"; // Default image
-import hatImage from "/hat.svg"; // hadi dyal test
+// import heroImage from "/hero.jpeg"; // Default image
+// import hatImage from "/hat.svg"; // hadi dyal test
+import first from '/first.webp'
+import second from '/second.jpeg'
+import third from '/third.jpeg'
 
 const CapSunSection = () => {
-    const [heroImageSrc, setHeroImageSrc] = useState(heroImage);
+    const [heroImageSrc, setHeroImageSrc] = useState(first);
 
     // Function to handle image click
     const handleImageClick = (imageUrl) => {
@@ -20,11 +23,11 @@ const CapSunSection = () => {
                         <div
                             className="row-span-2 w-full h-36 bg-white rounded-md cursor-pointer"
                             style={{
-                                backgroundImage: `url(${heroImage})`,
+                                backgroundImage: `url(${first})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}
-                            onClick={() => handleImageClick(heroImage)} // Set to hero image URL
+                            onClick={() => handleImageClick(first)} // Set to hero image URL
                         >
                             1
                         </div>
@@ -33,11 +36,12 @@ const CapSunSection = () => {
                         <div
                             className="row-span-2 col-start-1 row-start-3 w-full h-full bg-white rounded-md cursor-pointer"
                             style={{
-                                backgroundImage: `url(${hatImage})`,
+                                backgroundImage: `url(${second})`,
                                 backgroundSize: "cover",
+                                                                
                                 backgroundPosition: "center",
                             }}
-                            onClick={() => handleImageClick(hatImage)}
+                            onClick={() => handleImageClick(second)}
                         >
                             2
                         </div>
@@ -46,11 +50,11 @@ const CapSunSection = () => {
                         <div
                             className="row-span-2 col-start-1 row-start-5 w-full h-full bg-white rounded-md cursor-pointer"
                             style={{
-                                backgroundImage: `url(${heroImage})`,
+                                backgroundImage: `url(${third})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}
-                            onClick={() => handleImageClick(heroImage)}
+                            onClick={() => handleImageClick(third)}
                         >
                             3
                         </div>
@@ -60,7 +64,8 @@ const CapSunSection = () => {
                             className="col-span-2 row-span-6 col-start-2 row-start-1 w-full h-full bg-white rounded-md"
                             style={{
                                 backgroundImage: `url(${heroImageSrc})`, // Use state for big image
-                                backgroundSize: "cover",
+                                backgroundSize: "contain",
+                                backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
                             }}
                         >
