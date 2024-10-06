@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/capsun/",
+  base: "/http://cap-sun.tech/",
   server: {
-    port:7600
-  }
-})
+    port: 7600,
+  },
+});
